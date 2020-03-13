@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios'; 
-import PlayerCard from './components /PlayerCard'
-import { useForm } from './hooks/useForm'
+import PlayerCard from './components /PlayerCard';
+import PlayerForm from './components /PlayerForm';
 import './App.css';
 
 
@@ -36,7 +36,8 @@ componentDidMount(){
 render(){
   return(
   <div className = "App">
-    <h1>Title</h1>
+    <h1>Player List</h1>
+    <PlayerForm />
     <div className = "players">
       {this.state.players.map(player => (
         <PlayerCard 
