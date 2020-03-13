@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 export const useLocalStorage = (key, initialValue) => {
   // GOAL: build this to be able to replace "useState" anywhere we want to persist any state data to localStorage
-  // setup a state property ✅
-  // check to see if the value is already in localStorage ✅
-  // if not, set the value to localStorage ✅
+  // setup a state property 
+  // check to see if the value is already in localStorage 
+  // if not, set the value to localStorage 
   // update state & localStorage whenever the state changes
   // (Don't forget to stringify data going into LS, are parse data coming from LS)
   const [storedValue, setStoredValue] = useState(() => {

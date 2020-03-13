@@ -18,11 +18,8 @@ export default function PlayerForm(){
                 <legend>Type in your Favorite Player!</legend>
                 <input
                     label="name"
-                 //   className={classes.textField}
                     value={values.name}
                     onChange={handleChanges}
-                    margin="normal"
-                    variant="outlined"
                     name="name"
                 />
             </form>

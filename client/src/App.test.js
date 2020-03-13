@@ -7,3 +7,11 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+
+test('renders the form input', () => {
+  //Arrange 
+  const { getByLabelText } = render(<PlayerForm />)
+
+  
+})
