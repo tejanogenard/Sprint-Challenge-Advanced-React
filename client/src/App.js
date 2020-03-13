@@ -3,6 +3,7 @@ import axios from 'axios';
 import PlayerCard from './components /PlayerCard'
 import './App.css';
 
+
 class App extends React.Component{
 // Constructor for state
 constructor(){
@@ -14,7 +15,6 @@ super()
     searches: new Date()
   }
 }
-
 
 componentDidMount(){
   axios
