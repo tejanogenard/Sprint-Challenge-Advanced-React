@@ -15,7 +15,7 @@ export default function PlayerForm(){
     return(
         <div className = "form">
             <form onSubmit = {handleSubmit}>
-                <legend>Type in your Favorite Player!</legend>
+            <label htmlFor="player">Type in your favorite player</label>
                 <input
                     label="name"
                     value={values.name}
