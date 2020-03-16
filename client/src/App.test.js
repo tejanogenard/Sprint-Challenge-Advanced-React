@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, fireEvent, getByLabelText } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import ReactDOM from 'react-dom';
 import App from './App';
 import PlayerForm from './components /PlayerForm'
@@ -35,6 +35,9 @@ expect(Title).not.toBeFalsy
 
 it('should render the CDM', async () => {
   const component = await render(App, {
-    componentDidMount: [],
+    componentDidMount: [],   
+
+    
   })
+  expect(component).toBeInTheDocument
 })
