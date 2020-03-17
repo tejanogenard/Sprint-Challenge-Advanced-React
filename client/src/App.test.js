@@ -10,7 +10,7 @@ it('renders the app without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-// Ask your TL why this test is not passing 
+
 it('should render the input for favorite player', async () => {
 const { getByLabelText } = render(<PlayerForm />)
 // query the input node 
@@ -18,6 +18,7 @@ const playerInput = getByLabelText(/type in your favorite player/i)
 // use change event to add text to the input 
 fireEvent.change(playerInput, {target: {value: "test player input"}})
 
+expect(playerInput).toBeInTheDocument
 })
 
 
@@ -30,14 +31,4 @@ expect(Title).toBeInTheDocument
 expect(Title).toBeTruthy
 expect(Title).not.toBeFalsy
 
-})
-
-
-it('should render the CDM', async () => {
-  const component = await render(App, {
-    componentDidMount: [],   
-
-    
-  })
-  expect(component).toBeInTheDocument
 })
