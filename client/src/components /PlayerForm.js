@@ -16,7 +16,7 @@ export default function PlayerForm(){
         <div className = "form">
             <form onSubmit = {handleSubmit}>
             <label htmlFor="player">Type in your favorite player</label>
-                <input
+                <input id = "player"
                     label="name"
                     value={values.name}
                     onChange={handleChanges}
